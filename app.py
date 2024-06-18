@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -38,6 +38,7 @@ def index():
                     occupation=occupation)
         db.session.add(form)
         db.session.commit()
+        flash(f'{first_name}, your form submitted successfully', 'success')
     return render_template('index.html')
 
 
