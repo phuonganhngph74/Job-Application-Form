@@ -9,42 +9,41 @@
     <body>
         <div class="container">
             <h1 class="mt-4 mb-4">Job Application Form</h1>
-            <form>
+            <form method="post">
                 <div class="form-group mb-4">
-                    <labels for="first_name">First Name:</labels>
+                    <label for="first_name">First Name:</label>
                     <input class="form-control" type="text" id="first_name" name="first_name" required>
                 </div>
                 <div class="form-group mb-4">
-                    <labels for="last_name">Last Name:</labels>
+                    <label for="last_name">Last Name:</label>
                     <input class="form-control" type="text" id="last_name" name="last_name" required>
                 </div>
                 <div class="form-group mb-4">
-                    <labels for="email">Email:</labels>
+                    <label for="email">Email:</label>
                     <input class="form-control" type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group mb-4">
-                    <labels for="date">Available start date:</labels>
+                    <label for="date">Available start date:</label>
                     <input class="form-control" type="date" id="date" name="date" required>
                 </div>
                 <div class="form-group mb-4">
-                    <labels>Current occupation</labels>
+                    <label>Current occupation</label>
                     <br>
                     <div class="btn-group-vertical" id="occupation">
-                        <input class="btn-check form-control" type="radio" id="employed" name="occupation" required>
-                        <labels class="btn btn-outline-secondary" for="employed">Employee</labels>
+                        <input class="btn-check form-control" type="radio" id="employed" name="occupation" value="employed" required>
+                        <label class="btn btn-outline-secondary" for="employed">Employee</label>
 
-                        <input class="btn-check form-control" type="radio" id="unemployed" name="occupation" required>
-                        <labels class="btn btn-outline-secondary" for="unemployed">Unemployee</labels>
+                        <input class="btn-check form-control" type="radio" id="unemployed" name="occupation" value="unemployed" required>
+                        <label class="btn btn-outline-secondary" for="unemployed">Unemployee</label>
 
-                        <input class="btn-check form-control" type="radio" id="self-employed" name="occupation" required>
-                        <labels class="btn btn-outline-secondary" for="self-employed">Self-Employed</labels>
+                        <input class="btn-check form-control" type="radio" id="self-employed" name="occupation" value="self-employed" required>
+                        <label class="btn btn-outline-secondary" for="self-employed">Self-Employed</label>
 
-                        <input class="btn-check form-control" type="radio" id="student" name="occupation" required>
-                        <labels class="btn btn-outline-secondary" for="student">Student</labels>
-
+                        <input class="btn-check form-control" type="radio" id="student" name="occupation" value="student" required>
+                        <label class="btn btn-outline-secondary" for="student">Student</label>
                     </div>
                 </div>
-                <button class="btn btn-secondary mb-4" type="button">Submit</button>
+                <button class="btn btn-secondary mb-4" type="submit">Submit</button>
             </form>
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
